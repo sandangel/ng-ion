@@ -3,7 +3,31 @@
   "project": {
     "name": "ng-ion"
   },
-  "apps": [],
+  "apps": [
+    {
+      "name": "ionic",
+      "root": "apps/ionic/src",
+      "outDir": "dist/apps/ionic",
+      "assets": ["assets", "favicon.ico"],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "../../../tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": ["styles.scss", "theme/variables.scss"],
+      "stylePreprocessorOptions": {
+        "includePaths": ["../../../node_modules"]
+      },
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
